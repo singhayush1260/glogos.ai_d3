@@ -1,0 +1,84 @@
+@import "../../mixins/fancy_button.scss";
+.header {
+  width: 100%;
+  height: 10vh;
+  font-size: 22px;
+  padding: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--text-color-primary);
+  .header_logo,
+  .header_nav,
+  .header_button {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .header_logo {
+    width: 20%;
+    font-size: 0.5em;
+    cursor: pointer;
+  }
+  .header_nav {
+    width: 40%;
+    gap: 1em;
+    font-size: 0.6em;
+    a {
+      padding: 0.4em 0.7em;
+      &:hover {
+        background: rgba(255, 255, 255, 0.05);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(3.5px);
+        -webkit-backdrop-filter: blur(3.5px);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        cursor: pointer;
+      }
+    }
+  }
+  .header_button {
+    width: 25%;
+    gap: 0.5em;
+    @include fancy_button;
+  }
+  .header_mobile_button {
+    font-size: 1.2em;
+    display: none;
+  }
+  .header_mobile_nav {
+    position: absolute;
+    top: 15vh;
+    left: 5vw;
+    right: 5vw;
+    height: 250px;
+    width: 90vw;
+    padding: 1em;
+    display: none;
+    flex-direction: column;
+    gap: 0.5em;
+    @include fancy_button;
+    border-radius: 5px;
+    background-color: rgb(15, 5, 41);
+    z-index: 99;
+    button{
+      width: 100px;
+    }
+  }
+}
+@media (min-width: 200px) and (max-width: 786px) {
+  .header {
+    font-size: 20px;
+    .header_nav,
+    .header_button {
+      display: none;
+    }
+    .header_mobile_button {
+      display: flex;
+    }
+    .header_mobile_nav {
+      display: flex;
+    }
+  }
+}
