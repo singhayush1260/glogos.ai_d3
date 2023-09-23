@@ -7,18 +7,19 @@
   margin: auto;
   display: flex;
   color: var(--text-color-primary);
-  //background-color: aqua;
   .hero_text {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: 1.2em;
     padding: 1em;
-    font-style: italic;
     font-weight: bolder;
+    h1{
+      font-size: 2.8em;
+    }
     p {
-      width: 100%;
-      font-size: 0.8em;
+      font-style: italic;
+      width: 18em;
+      font-size: 1em;
       margin: 1em 0;
     }
     button {
@@ -41,17 +42,8 @@
     }
   }
 }
-@media (min-width: 487px) and (max-width: 786px) {
+@media (min-width: 487px) and (max-width: 1200px) {
   .hero {
-    font-size: 1.3rem;
-    .hero_image {
-      display: flex;
-    }
-  }
-}
-@media (min-width: 787px) and (max-width: 1200px) {
-  .hero {
-    font-size: 1.4rem;
     .hero_image {
       display: flex;
     }
@@ -59,8 +51,14 @@
 }
 @media (min-width: 1201px) {
   .hero {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     padding: 0 3em;
+    font-style: oblique;
+    .hero_text{
+      p{
+        width: 90%;
+      }
+    }
     .hero_image {
       display: flex;
     }
