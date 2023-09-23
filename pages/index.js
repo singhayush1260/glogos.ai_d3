@@ -12,8 +12,9 @@ const Home=()=>{
      <Seperator/>
      {/* <Features/>
      <Seperator/>
-     <Footer/>
+    
      <Seperator/> */}
+      <Footer/>
     </>
   )
 }
