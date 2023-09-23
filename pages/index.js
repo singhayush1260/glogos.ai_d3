@@ -10,6 +10,7 @@ const Home=()=>{
      <Header/>
      <Hero/>
      <Seperator/>
+     <Seperator/>
      {/* <Features/>
      <Seperator/>
     

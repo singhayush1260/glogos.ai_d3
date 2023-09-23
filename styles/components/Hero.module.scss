@@ -10,15 +10,17 @@
   .hero_text {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
     padding: 1em;
     font-weight: bolder;
+    text-align: center;
     h1{
       font-size: 2.8em;
     }
     p {
       font-style: italic;
-      width: 18em;
+     // width: 18em;
       font-size: 1em;
       margin: 1em 0;
     }
@@ -44,6 +46,10 @@
 }
 @media (min-width: 487px) and (max-width: 1200px) {
   .hero {
+    .hero_text{
+      align-items: stretch;
+      text-align: left;
+    }
     .hero_image {
       display: flex;
     }
@@ -55,6 +61,8 @@
     padding: 0 3em;
     font-style: oblique;
     .hero_text{
+      align-items: stretch;
+      text-align: left;
       p{
         width: 90%;
       }
