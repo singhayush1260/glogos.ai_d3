@@ -2,13 +2,13 @@
 .features {
   width: 100%;
   max-width: 1800px;
-  padding: 0 1em;
   font-size: 1rem;
+  padding: 0 1em;
   color: var(--text-color-primary);
   h1 {
-    font-size: 2em;
+    font-size: 2.2em;
     padding-bottom: 1em;
-    padding-left: 1em;
+    padding-left: 1rem;
     margin: auto;
   }
   .feature_one {
@@ -17,7 +17,7 @@
     }
   }
   .feature {
-    padding: 1em 1em 2em 1em;
+    padding: 1em 1em 2em 1rem;
     width: 100%;
     margin: auto;
     margin-bottom: 2em;
