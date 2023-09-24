@@ -15,10 +15,10 @@
     }
   }
   .div_two {
-    padding: 1em 0;
+    padding: 0 1em 1em 1em;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     gap: 0.5em;
     h6 {
       font-size: 0.8em;
@@ -45,7 +45,7 @@
     justify-content: space-around;
     .div_one {
       img {
-        width: 360px;
+        width: 450px;
         height: 320px;
       }
     }
@@ -56,7 +56,7 @@
         margin-bottom: 0.5em;
       }
       p {
-        font-size: 1.4em;
+        font-size: 1.2em;
         margin-bottom: 0.5em;
       }
     }

@@ -18,19 +18,24 @@
   }
   .feature {
     padding: 1em 1em 2em 1em;
-    width: 90%;
+    width: 100%;
     margin: auto;
     margin-bottom: 2em;
     @include fancy_button;
     .feature__heading_illustration {
       background-color: #000003;
       font-size: 1em;
+      h2{
+        padding-top: 0.5em;
+        padding-left: 0.5em;
+      }
     }
     .feature_description {
       display: none;
     }
     button {
-      margin-top: 1.2em;
+      margin-left: 1em;
+      margin-top: 2em;
     }
   }
 }
@@ -46,10 +51,19 @@
   .features {
     font-size: 1.4rem;
     .feature {
+      width: 90%;
+     .feature__heading_illustration{
+      h2{
+        width: 50%;
+      }
+     }
       .feature_description {
         display: block;
         font-size: 0.8em;
         margin-top: 1em;
+      }
+      button{
+        margin-left: 0;
       }
     }
   }

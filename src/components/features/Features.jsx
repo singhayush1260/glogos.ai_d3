@@ -25,7 +25,7 @@ const Features = () => {
       <div className={`${classes.feature} ${classes.feature_one}`}>
         <div className={classes.feature__heading_illustration}>
           <h2 className={classes.long_heading}>
-            Discover the Aggregate Sentiment of Every Post
+            Discover the Aggregate Sentiment of Every Post You Make
           </h2>
           <div className={classes.feature_illustration}>
              <Feature0neIllustration score={score}/> 
