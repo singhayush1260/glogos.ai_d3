@@ -11,10 +11,8 @@ const Home=()=>{
      <Hero/>
      <Seperator/>
      <Seperator/>
-     {/* <Features/>
+     <Features/>
      <Seperator/>
-    
-     <Seperator/> */}
       <Footer/>
     </>
   )

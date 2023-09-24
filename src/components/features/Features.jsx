@@ -28,7 +28,7 @@ const Features = () => {
             Discover the Aggregate Sentiment of Every Post
           </h2>
           <div className={classes.feature_illustration}>
-            <Feature0neIllustration score={score}/>
+             <Feature0neIllustration score={score}/> 
           </div>
         </div>
         <p className={classes.feature_description}>
